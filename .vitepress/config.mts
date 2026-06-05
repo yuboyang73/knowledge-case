@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
-import markdownItKatex from 'markdown-it-katex'
+import { tex as mdTexPlugin } from '@mdit/plugin-tex'
+import katex from 'katex'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,7 +10,10 @@ export default defineConfig({
   description: "个人知识库 — 理论模块与习题实战的双向关联体系",
   markdown: {
     config: (md) => {
-      md.use(markdownItKatex)
+      md.use(mdTexPlugin, {
+        render: (content, displayMode) =>
+          katex.renderToString(content, { displayMode, throwOnError: false })
+      })
     }
   },
   head: [

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "C++ 数据结构与算法"
   text: "个人学习知识库"
-  tagline: "理论模块 + 习题实战 · 双向关联体系"
+  tagline: "理论模块 + 习题实战"
   actions:
     - theme: brand
       text: 📖 进入知识库

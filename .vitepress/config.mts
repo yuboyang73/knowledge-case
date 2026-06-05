@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // GitHub Pages 部署时需设置仓库名作为 base
   base: '/knowledge-case/',
+  srcDir: 'docs',              // 源文件目录设为 docs/
   title: "C++ 数据结构与算法",
   description: "个人知识库 — 理论模块与习题实战的双向关联体系",
   themeConfig: {

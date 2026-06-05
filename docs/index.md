@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
@@ -9,24 +8,24 @@ hero:
   actions:
     - theme: brand
       text: 📖 理论模块
-      link: /INDEX.md#一、理论模块一览
+      link: /sitemap#一、理论模块一览
     - theme: alt
       text: ✍️ 习题练习
-      link: /INDEX.md#二、习题文件一览
+      link: /sitemap#二、习题文件一览
     - theme: alt
       text: 📋 完整索引
-      link: /INDEX
+      link: /sitemap
 
 features:
   - title: 数据结构
     details: BST二叉搜索树 · 哈希表 · 图的存储 · Trie树 · 前缀和与差分
-    link: /INDEX.md#一、理论模块一览
+    link: /sitemap#一、理论模块一览
   - title: 算法范式
     details: 回溯（子集树/排列树）· 分治 · 分支限界 · 贪心 · 动态规划 · DFS/BFS
-    link: /INDEX.md#一、理论模块一览
+    link: /sitemap#一、理论模块一览
   - title: 字符串算法
     details: BF暴力匹配 · KMP算法 · next数组构建 · 字符串匹配专题
-    link: /theory/algo-string-match
+    link: /sitemap#二、习题文件一览
   - title: 哈希与滑动窗口
     details: 两数之和 · 字母异位词分组 · 无重复字符最长子串
     link: /exercises/hash/0001-两数之和
@@ -44,16 +43,6 @@ features:
     link: /exercises/dp/LCS-最长公共子序列
 ---
 
-<script setup>
-import { 
-  VPTeamMembers,
-  VPTeamPage,
-  VPTeamPageTitle,
-  VPTeamPageSection
-} from 'vitepress/theme'
-</script>
-
----
 
 ## 📊 知识库概况
 
@@ -98,7 +87,7 @@ import {
 :::
 
 <div style="margin-top: 2rem; text-align: center;">
-  <a href="/INDEX" style="display: inline-block; padding: 0.75rem 2rem; background: var(--vp-c-brand-1); color: white; border-radius: 8px; text-decoration: none; font-weight: 600; transition: background 0.2s;">
-    📋 查看完整索引（INDEX）
+  <a href="/sitemap" style="display: inline-block; padding: 0.75rem 2rem; background: var(--vp-c-brand-1); color: white; border-radius: 8px; text-decoration: none; font-weight: 600; transition: background 0.2s;">
+    📋 查看完整索引
   </a>
 </div>

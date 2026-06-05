@@ -10,16 +10,16 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '🏠 首页', link: '/' },
-      { text: '📖 理论模块', link: '/INDEX#一、理论模块一览' },
-      { text: '✍️ 习题练习', link: '/INDEX#二、习题文件一览' },
-      { text: '📋 完整索引', link: '/INDEX' }
+      { text: '📖 理论模块', link: '/sitemap#一、理论模块一览' },
+      { text: '✍️ 习题练习', link: '/sitemap#二、习题文件一览' },
+      { text: '📋 完整索引', link: '/sitemap' }
     ],
 
     sidebar: [
       {
         text: '📋 全局导航',
         items: [
-          { text: '完整索引 (INDEX)', link: '/INDEX' }
+          { text: '📋 完整索引', link: '/sitemap' }
         ]
       },
       {

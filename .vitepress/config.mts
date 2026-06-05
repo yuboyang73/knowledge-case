@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import markdownItKatex from 'markdown-it-katex'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,6 +7,14 @@ export default defineConfig({
   srcDir: 'docs',              // 源文件目录设为 docs/
   title: "C++ 数据结构与算法",
   description: "个人知识库 — 理论模块与习题实战的双向关联体系",
+  markdown: {
+    config: (md) => {
+      md.use(markdownItKatex)
+    }
+  },
+  head: [
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

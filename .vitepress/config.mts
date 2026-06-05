@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  // GitHub Pages 部署时需设置仓库名作为 base
+  base: '/knowledge-case/',
   title: "my-knowledge-base",
   description: "knowledge record",
   themeConfig: {
